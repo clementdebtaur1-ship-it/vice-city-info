@@ -1,124 +1,171 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GTA Vice City - Infos</title>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@400;600&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --bg: #070a10;
-            --accent: #00d4ff;
-            --card-bg: #111620;
-            --border: rgba(0, 212, 255, 0.15);
-            --text: #e2e8f0;
-        }
-
-        body {
-            background-color: var(--bg);
-            color: var(--text);
-            font-family: 'Rajdhani', sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            margin: 0;
-            padding: 20px;
-        }
-
-        .container {
-            background: var(--card-bg);
-            border: 1px solid var(--border);
-            border-radius: 12px;
-            padding: 40px;
-            max-width: 600px;
-            width: 100%;
-            text-align: center;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.5);
-        }
-
-        h1 {
-            font-family: 'Orbitron', monospace;
-            color: var(--accent);
-            text-transform: uppercase;
-            letter-spacing: 3px;
-            margin-bottom: 20px;
-        }
-
-        p {
-            font-size: 1.1rem;
-            line-height: 1.6;
-            margin-bottom: 30px;
-            color: #94a3b8;
-        }
-
-        .btn-play {
-            display: inline-block;
-            padding: 14px 30px;
-            background: var(--accent);
-            color: #070a10;
-            font-family: 'Orbitron', monospace;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            text-decoration: none;
-            border-radius: 6px;
-            transition: all 0.3s ease;
-            box-shadow: 0 0 15px rgba(0, 212, 255, 0.3);
-        }
-
-        .btn-play:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 0 25px rgba(0, 212, 255, 0.5);
-        }
-
-        .btn-back {
-            display: block;
-            margin-top: 20px;
-            color: #64748b;
-            text-decoration: none;
-            font-size: 0.9rem;
-        }
-
-        .btn-back:hover {
-            color: var(--accent);
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="GTA Vice City - codes de triche">
+<title>GTA Vice City — Codes</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#060912;--panel:#0d1420;--panel2:#111b29;--accent:#00d4ff;
+  --accent2:#7c3aed;--text:#e8f0f8;--muted:#8fa1b5;
+  --border:rgba(0,212,255,.18);--shadow:0 24px 70px rgba(0,0,0,.55);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;min-height:100vh;padding:28px 16px;
+  color:var(--text);font-family:'Rajdhani',sans-serif;
+  background:
+    radial-gradient(circle at 15% 10%,rgba(0,212,255,.10),transparent 30%),
+    radial-gradient(circle at 85% 90%,rgba(124,58,237,.10),transparent 30%),var(--bg);
+}
+.container{width:min(920px,100%);margin:auto}
+.card{
+  overflow:hidden;background:linear-gradient(145deg,rgba(17,27,41,.98),rgba(9,15,25,.98));
+  border:1px solid var(--border);border-radius:22px;box-shadow:var(--shadow);
+}
+.hero{padding:38px 30px 28px;text-align:center;border-bottom:1px solid var(--border)}
+.badge{
+  display:inline-flex;align-items:center;gap:8px;padding:7px 12px;border-radius:999px;
+  border:1px solid var(--border);background:rgba(0,212,255,.07);color:var(--accent);
+  font-weight:700;letter-spacing:1px;font-size:.82rem;text-transform:uppercase
+}
+h1{
+  margin:18px 0 8px;font-family:Orbitron,monospace;font-size:clamp(1.8rem,5vw,3rem);
+  letter-spacing:2px;color:var(--accent);text-shadow:0 0 25px rgba(0,212,255,.25)
+}
+.subtitle{margin:0 auto;color:var(--muted);font-size:1.08rem;max-width:650px}
+.toolbar{
+  display:flex;justify-content:space-between;align-items:center;gap:12px;
+  padding:16px 20px;background:rgba(4,9,16,.55);border-bottom:1px solid var(--border)
+}
+.toolbar label{color:var(--muted);font-weight:700}
+select{
+  min-width:180px;padding:10px 12px;border-radius:10px;border:1px solid var(--border);
+  background:var(--panel2);color:var(--text);font:inherit;font-weight:700;outline:none
+}
+.content{padding:24px}
+.table-wrap{overflow-x:auto;border:1px solid var(--border);border-radius:15px}
+table{width:100%;border-collapse:collapse;min-width:600px}
+th,td{padding:14px 16px;text-align:left;border-bottom:1px solid rgba(255,255,255,.06)}
+th{
+  background:rgba(0,212,255,.06);color:var(--accent);font-family:Orbitron,monospace;
+  font-size:.78rem;letter-spacing:1px;text-transform:uppercase
+}
+tr:last-child td{border-bottom:0}
+tbody tr{transition:.2s;background:transparent}
+tbody tr:hover{background:rgba(0,212,255,.045)}
+.code{
+  display:inline-block;padding:6px 10px;border-radius:8px;
+  background:#070c14;border:1px solid rgba(0,212,255,.2);color:#fff;
+  font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-weight:800;letter-spacing:.5px
+}
+.actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:24px}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;min-height:48px;
+  padding:0 22px;border-radius:11px;text-decoration:none;font-family:Orbitron,monospace;
+  font-size:.82rem;font-weight:800;letter-spacing:1px;transition:.2s
+}
+.btn-play{background:var(--accent);color:#041019;box-shadow:0 0 24px rgba(0,212,255,.18)}
+.btn-back{border:1px solid var(--border);color:var(--text);background:rgba(255,255,255,.03)}
+.btn:hover{transform:translateY(-2px);filter:brightness(1.08)}
+.footer{text-align:center;color:#65788e;font-size:.86rem;margin-top:18px}
+@media(max-width:650px){
+  body{padding:12px}.hero{padding:28px 18px 22px}.content{padding:14px}
+  .toolbar{align-items:stretch;flex-direction:column}.toolbar select{width:100%}
+  .actions{flex-direction:column}.btn{width:100%}
+}
+</style>
 </head>
 <body>
+<main class="container">
+  <section class="card">
+    <header class="hero">
+      <div class="badge" id="locationBadge">🌍 <span data-i18n="detected">Langue détectée</span></div>
+      <h1 data-i18n="title">GTA Vice City — Codes</h1>
+      <p class="subtitle" data-i18n="subtitle">Les principaux codes de triche, présentés clairement et automatiquement dans la langue de ton navigateur.</p>
+    </header>
 
-<div class="container">
-    <h1>GTA Vice City Cheat Codes</h1>
-    
-    <p>
-        <div class="cheat-codes-container">
-    <h2>Codes de Triche GTA Vice City</h2>
-    <table class="cheat-table">
-        <thead>
-            <tr>
-                <th>Effet du Code</th>
-                <th>Code à taper</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr><td>Toutes les armes lourdes</td><td><span class="code-badge">NUTTERTOOLS</span></td></tr>
-            <tr><td>Toutes les armes légères</td><td><span class="code-badge">THUGSTOOLS</span></td></tr>
-            <tr><td>Toutes les armes moyennes</td><td><span class="code-badge">PROFESSIONALTOOLS</span></td></tr>
-            <tr><td>Armure au maximum</td><td><span class="code-badge">PRECIOUSPROTECTION</span></td></tr>
-            <tr><td>Santé au maximum</td><td><span class="code-badge">ASPIRINE</span></td></tr>
-            <tr><td>Diminuer l'indice de recherche</td><td><span class="code-badge">LEAVEMEALONE</span></td></tr>
-            <tr><td>Augmenter l'indice de recherche</td><td><span class="code-badge">AIRSHIP</span></td></tr>
-            <tr><td>Faire exploser les voitures proches</td><td><span class="code-badge">BIGBANG</span></td></tr>
-            <tr><td>Les voitures peuvent voler</td><td><span class="code-badge">COMEFLYWITHME</span></td></tr>
-            <tr><td>Les voitures roulent sur l'eau</td><td><span class="code-badge">SEAWAYS</span></td></tr>
-            <tr><td>Conduite parfaite / Meilleure tenue de route</td><td><span class="code-badge">GRIPISEVERYTHING</span></td></tr>
-			<span class
-    </p>
+    <div class="toolbar">
+      <label for="language" data-i18n="language">Langue</label>
+      <select id="language" aria-label="Language"></select>
+    </div>
 
-    <a href="http://clement.deb.taur.free.fr/GTA.html" class="btn-play">Jouer au jeu</a>
-    
-    <a href="Game.html" class="btn-back">← Retour au portail</a>
-</div>
+    <div class="content">
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th data-i18n="effect">Effet</th><th data-i18n="code">Code</th></tr></thead>
+          <tbody id="cheats"></tbody>
+        </table>
+      </div>
 
+      <div class="actions">
+        <a href="http://clement.deb.taur.free.fr/GTA.html" class="btn btn-play" data-i18n="play">Jouer au jeu</a>
+        <a href="Game.html" class="btn btn-back" data-i18n="back">← Retour au portail</a>
+      </div>
+    </div>
+  </section>
+  <div class="footer" id="footer"></div>
+</main>
+
+<script>
+const data = {
+  fr:{name:"Français",title:"GTA Vice City — Codes",subtitle:"Les principaux codes de triche, présentés clairement et automatiquement dans la langue de ton navigateur.",detected:"Langue détectée",language:"Langue",effect:"Effet",code:"Code",play:"Jouer au jeu",back:"← Retour au portail",footer:"Langue choisie automatiquement selon ta région / ton navigateur.",region:"Région détectée",
+    cheats:[["Toutes les armes lourdes","NUTTERTOOLS"],["Toutes les armes légères","THUGSTOOLS"],["Toutes les armes moyennes","PROFESSIONALTOOLS"],["Armure au maximum","PRECIOUSPROTECTION"],["Santé au maximum","ASPIRINE"],["Diminuer l'indice de recherche","LEAVEMEALONE"],["Augmenter l'indice de recherche","AIRSHIP"],["Faire exploser les voitures proches","BIGBANG"],["Les voitures peuvent voler","COMEFLYWITHME"],["Les voitures roulent sur l'eau","SEAWAYS"],["Conduite parfaite / meilleure tenue de route","GRIPISEVERYTHING"]]},
+  en:{name:"English",title:"GTA Vice City — Cheat Codes",subtitle:"The main cheat codes, clearly displayed and automatically translated to your browser language.",detected:"Detected language",language:"Language",effect:"Effect",code:"Code",play:"Play the game",back:"← Back to portal",footer:"Language selected automatically from your region / browser.",region:"Detected region",
+    cheats:[["All heavy weapons","NUTTERTOOLS"],["All light weapons","THUGSTOOLS"],["All medium weapons","PROFESSIONALTOOLS"],["Maximum armor","PRECIOUSPROTECTION"],["Maximum health","ASPIRINE"],["Lower wanted level","LEAVEMEALONE"],["Increase wanted level","AIRSHIP"],["Blow up nearby cars","BIGBANG"],["Cars can fly","COMEFLYWITHME"],["Cars can drive on water","SEAWAYS"],["Perfect handling","GRIPISEVERYTHING"]]},
+  es:{name:"Español",title:"GTA Vice City — Códigos",subtitle:"Los principales códigos de trucos, mostrados claramente y traducidos automáticamente.",detected:"Idioma detectado",language:"Idioma",effect:"Efecto",code:"Código",play:"Jugar",back:"← Volver al portal",footer:"Idioma seleccionado automáticamente según tu región / navegador.",region:"Región detectada",
+    cheats:[["Todas las armas pesadas","NUTTERTOOLS"],["Todas las armas ligeras","THUGSTOOLS"],["Todas las armas medias","PROFESSIONALTOOLS"],["Armadura al máximo","PRECIOUSPROTECTION"],["Salud al máximo","ASPIRINE"],["Reducir nivel de búsqueda","LEAVEMEALONE"],["Aumentar nivel de búsqueda","AIRSHIP"],["Hacer explotar coches cercanos","BIGBANG"],["Los coches pueden volar","COMEFLYWITHME"],["Los coches circulan sobre el agua","SEAWAYS"],["Conducción perfecta","GRIPISEVERYTHING"]]},
+  de:{name:"Deutsch",title:"GTA Vice City — Cheats",subtitle:"Die wichtigsten Cheat-Codes, übersichtlich und automatisch in deiner Browsersprache.",detected:"Erkannte Sprache",language:"Sprache",effect:"Effekt",code:"Code",play:"Spiel starten",back:"← Zum Portal",footer:"Sprache automatisch anhand deiner Region / deines Browsers ausgewählt.",region:"Erkannte Region",
+    cheats:[["Alle schweren Waffen","NUTTERTOOLS"],["Alle leichten Waffen","THUGSTOOLS"],["Alle mittleren Waffen","PROFESSIONALTOOLS"],["Maximale Rüstung","PRECIOUSPROTECTION"],["Maximale Gesundheit","ASPIRINE"],["Fahndungslevel senken","LEAVEMEALONE"],["Fahndungslevel erhöhen","AIRSHIP"],["Nahe Autos explodieren lassen","BIGBANG"],["Autos können fliegen","COMEFLYWITHME"],["Autos fahren auf Wasser","SEAWAYS"],["Perfektes Handling","GRIPISEVERYTHING"]]},
+  it:{name:"Italiano",title:"GTA Vice City — Codici",subtitle:"I principali codici, visualizzati in modo chiaro e tradotti automaticamente.",detected:"Lingua rilevata",language:"Lingua",effect:"Effetto",code:"Codice",play:"Gioca",back:"← Torna al portale",footer:"Lingua selezionata automaticamente in base alla regione / al browser.",region:"Regione rilevata",
+    cheats:[["Tutte le armi pesanti","NUTTERTOOLS"],["Tutte le armi leggere","THUGSTOOLS"],["Tutte le armi medie","PROFESSIONALTOOLS"],["Armatura al massimo","PRECIOUSPROTECTION"],["Salute al massimo","ASPIRINE"],["Ridurre il livello di ricercato","LEAVEMEALONE"],["Aumentare il livello di ricercato","AIRSHIP"],["Far esplodere le auto vicine","BIGBANG"],["Le auto possono volare","COMEFLYWITHME"],["Le auto possono viaggiare sull'acqua","SEAWAYS"],["Guida perfetta","GRIPISEVERYTHING"]]},
+  pt:{name:"Português",title:"GTA Vice City — Códigos",subtitle:"Os principais códigos de trapaça, apresentados de forma clara e traduzidos automaticamente.",detected:"Idioma detectado",language:"Idioma",effect:"Efeito",code:"Código",play:"Jogar",back:"← Voltar ao portal",footer:"Idioma selecionado automaticamente pela região / navegador.",region:"Região detectada",
+    cheats:[["Todas as armas pesadas","NUTTERTOOLS"],["Todas as armas leves","THUGSTOOLS"],["Todas as armas médias","PROFESSIONALTOOLS"],["Armadura máxima","PRECIOUSPROTECTION"],["Vida máxima","ASPIRINE"],["Diminuir nível de procurado","LEAVEMEALONE"],["Aumentar nível de procurado","AIRSHIP"],["Explodir carros próximos","BIGBANG"],["Carros podem voar","COMEFLYWITHME"],["Carros podem andar na água","SEAWAYS"],["Condução perfeita","GRIPISEVERYTHING"]]},
+  nl:{name:"Nederlands",title:"GTA Vice City — Cheats",subtitle:"De belangrijkste cheats, duidelijk weergegeven en automatisch vertaald.",detected:"Gedetecteerde taal",language:"Taal",effect:"Effect",code:"Code",play:"Spelen",back:"← Terug naar portal",footer:"Taal automatisch gekozen op basis van je regio / browser.",region:"Gedetecteerde regio",
+    cheats:[["Alle zware wapens","NUTTERTOOLS"],["Alle lichte wapens","THUGSTOOLS"],["Alle middelzware wapens","PROFESSIONALTOOLS"],["Maximale bepantsering","PRECIOUSPROTECTION"],["Maximale gezondheid","ASPIRINE"],["Gewenst niveau verlagen","LEAVEMEALONE"],["Gewenst niveau verhogen","AIRSHIP"],["Nabije auto's laten ontploffen","BIGBANG"],["Auto's kunnen vliegen","COMEFLYWITHME"],["Auto's rijden over water","SEAWAYS"],["Perfecte besturing","GRIPISEVERYTHING"]]}
+};
+
+const regionNames = new Intl.DisplayNames([navigator.language || "en"], {type:"region"});
+const langSelect = document.getElementById("language");
+
+function detectLanguage(){
+  const candidates = navigator.languages?.length ? navigator.languages : [navigator.language || "en"];
+  for(const l of candidates){
+    const key=l.toLowerCase().split("-")[0];
+    if(data[key]) return key;
+  }
+  return "en";
+}
+function detectRegion(){
+  try{
+    const loc = new Intl.Locale(navigator.language || "en");
+    const region = loc.region || "";
+    return region ? regionNames.of(region) : "";
+  }catch(e){ return ""; }
+}
+function render(lang){
+  const d=data[lang]||data.en;
+  document.documentElement.lang=lang;
+  document.title=d.title;
+  document.querySelectorAll("[data-i18n]").forEach(el=>{
+    const k=el.dataset.i18n;if(d[k]) el.textContent=d[k];
+  });
+  document.getElementById("cheats").innerHTML=d.cheats.map(([effect,code])=>
+    `<tr><td>${effect}</td><td><span class="code">${code}</span></td></tr>`).join("");
+  const region=detectRegion();
+  document.getElementById("locationBadge").innerHTML=`🌍 <span>${d.detected}${region ? " · "+region : ""}</span>`;
+  document.getElementById("footer").textContent=d.footer;
+  langSelect.value=lang;
+}
+Object.entries(data).forEach(([key,d])=>{
+  const opt=document.createElement("option");opt.value=key;opt.textContent=d.name;langSelect.appendChild(opt);
+});
+const initial=detectLanguage();
+render(initial);
+langSelect.addEventListener("change",e=>render(e.target.value));
+</script>
 </body>
 </html>
